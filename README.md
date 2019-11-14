@@ -1,4 +1,4 @@
-# Virgil - portfolio/business website for football player
+# Virgil - portfolio/business website for the football player
 #### This is a responsive online website with slick slider and other stuff.
 
 ### :rocket: [DEMO](https://blackcrownwatches.netlify.com/)
