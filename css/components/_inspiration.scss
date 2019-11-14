@@ -1,0 +1,40 @@
+.inspiration {
+    &__intro {
+        margin-bottom: 5rem;
+        margin-top: 8.333rem;
+        @include atMedium {
+            margin-bottom: 3.75rem;
+            margin-top: 6.25rem;
+        }
+
+        &-title {
+            position: relative;
+            margin-bottom: 2.667rem;
+            padding-bottom: 2.667rem;
+            @include atMedium {
+                margin-bottom: 2rem;
+                padding-bottom: 2rem;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 8.333rem;
+                height: 1px;
+                background-color: $color-primary;
+                @include atMedium {
+                    width: 6.25rem;
+                }
+            }
+        }
+    }
+
+    & + section {
+        padding-top: 9.25rem;
+        @include atMedium {
+            padding-top: 6.9375rem;
+        }
+    }
+}

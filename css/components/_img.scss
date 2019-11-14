@@ -1,0 +1,19 @@
+.img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    position: relative;
+    @include atMedium {
+        height: 100%;
+    }
+
+    &--lg {
+        @include atMedium {
+            height: 20rem;
+        }
+        @include atLarge {
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.cta {
+    margin: 8.333rem 0;
+    text-align: center;
+    position: relative;
+    @include atSmall {
+        padding: 5rem 0;
+        margin: 6.25rem 0;
+    }
+    @include atExtralarge {
+        padding: 10rem 0;
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        background-image: url("../images/leaves.png");
+        background-repeat: no-repeat;
+        background-size: 15% auto;
+        background-position: left center;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        @include atSmall {
+            background-size: auto 30rem;
+        }
+        @include atExtralarge {
+            max-width: 19.8125rem;
+            background-size: contain;
+        }
+    }
+
+    &:before {
+        left: 0;
+    }
+
+    &:after {
+        transform: scaleX(-1);
+        right: 0;
+    }
+
+    &__link {
+        margin: 5rem auto;
+        @include atMedium {
+            margin: 3.75rem auto;
+        }
+
+        &-label {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 2.083rem;
+            line-height: 1;
+            font-family: $font-main;
+            font-weight: 700;
+            color: $color-gray-drk;
+            letter-spacing: 3.21px;
+            @include atMedium {
+                padding-bottom: 1.5625rem;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid $color-gray-drk;
+            color: $color-gray-drk;
+            height: 35px;
+            width: 35px;
+
+            &:hover {
+                color: $color-white;
+                background-color: $color-primary;
+                border-color: $color-primary;
+            }
+
+            & + & {
+                margin-left: 1.333rem;
+                @include atMedium {
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        &-icon {
+            font-size: 1.667rem;
+            @include atMedium {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.featured-boxes-wrapper {
+    margin-bottom: -5.333rem;
+    @include atMedium {
+        margin-bottom: -4rem;
+    }
+}
+
+.featured-box {
+    position: relative;
+    display: block;
+    height: 45.833rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 5.333rem;
+    @include atMedium {
+        height: 34.375rem;
+        margin-bottom: 4rem;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-black, .2);
+        pointer-events: none;
+        user-select: none;
+        transition: all .25s;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: all .25s;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        padding: 5.5rem 3.333rem 1.333rem 3.333rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        @include atMedium {
+            padding: 4.125rem 2.5rem 1rem 2.5rem;
+        }
+
+        &--alt {
+            padding-top: 3.333rem;
+            @include atMedium {
+                padding-top: 2.5rem;
+            }
+        }
+    }
+
+    &:hover {
+        &:after {
+            background-color: rgba($color-black, .46);
+        }
+
+        .featured-box {
+            &__bg {
+                transform: scale(1.05);
+            }
+        }
+
+        .link {
+            &:after {
+                transform: translateY(-50%) scaleX(.5);
+            }
+        }
+    }
+}

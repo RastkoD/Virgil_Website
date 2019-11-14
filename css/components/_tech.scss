@@ -1,0 +1,44 @@
+.tech {
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__copy {
+        text-align: center;
+        margin-top: -1rem;
+        position: relative;
+        z-index: 1;
+        padding: 0 5rem;
+        @include atSmall {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            width: calc(100% - 60px);
+            max-width: 45%;
+        }
+        @include atLarge {
+            max-width: 27.6875rem;
+        }
+
+        &-inner {
+            padding: 2.5rem;
+            background-color: $color-white-3;
+            @include atSmall {
+                padding: 2rem;
+                border: 1px solid $color-gray-lgt-4;
+            }
+            @include atMedium {
+                padding: 3.75rem 1.875rem;
+            }
+            @include atExtralarge {
+                padding: 6.25rem 1.875rem 7.8125rem 1.875rem;
+            }
+        }
+    }
+}

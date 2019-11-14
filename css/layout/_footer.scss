@@ -1,0 +1,41 @@
+.footer {
+    background-color: $color-primary;
+    padding: 1.667rem 0 3.333rem 0;
+    text-align: center;
+    @include atMedium {
+        padding: 1.25rem 0 2.5rem 0;
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__logo {
+        display: block;
+        width: 11.667rem;
+        filter: brightness(0) invert(1);
+        margin: 0 auto;
+        @include atMedium {
+            width: 8.75rem;
+        }
+
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &__copyright {
+        color: $color-white;
+        letter-spacing: 1px;
+        font-family: $font-alt;
+        text-transform: uppercase;
+        margin-top: 1.5rem;
+        @extend .p--xs;
+        @include atHuge {
+            margin-top: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

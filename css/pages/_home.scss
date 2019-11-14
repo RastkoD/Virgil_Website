@@ -1,0 +1,56 @@
+.home {
+  &__section {
+    &-1 {
+      padding: 7.5rem 0 11.875rem 0;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-30%);
+        width: 35.625rem;
+        max-width: 40%;
+        height: 53.75rem;
+        background-image: url('../images/flower.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        pointer-events: none;
+        user-select: none;
+        @include atMedium {
+          top: auto;
+          bottom: -6.5625rem;
+          transform: none;
+        }
+      }
+    }
+
+    &-2 {
+      background-color: $color-white-2;
+      padding: 8.0625rem 0 9.6875rem 0;
+
+      &-bird {
+        width: 13.4375rem;
+        transform: scaleX(-1);
+        position: absolute;
+        bottom: -4.375rem;
+        left: -2.8125rem;
+        pointer-events: none;
+        user-select: none;
+      }
+    }
+
+    &-3 {
+      padding-top: 6.9375rem;
+
+      &-intro {
+        margin-bottom: 5.833rem;
+        @include atMedium {
+          margin-bottom: 4.375rem;
+        }
+      }
+    }
+  }
+}

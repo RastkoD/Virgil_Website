@@ -1,0 +1,56 @@
+.gallery {
+    position: relative;
+
+    .slick {
+        &-slide {
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__slider {
+        &-arrow {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            cursor: pointer;
+            width: 2rem;
+            transition: all .25s;
+            @include atMedium {
+                width: 2.1875rem;
+            }
+
+            &:hover {
+                opacity: .75;
+            }
+    
+            &--prev {
+                left: -2rem;
+                transform: translate(-100%, -50%) scaleX(-1);
+                @include atMedium {
+                    left: -1.5rem;
+                }
+            }
+    
+            &--next {
+                right: -2rem;
+                transform: translate(100%, -50%);
+                @include atMedium {
+                    right: -1.5rem;
+                }
+            }
+        }   
+    }
+
+    &__info {
+        padding: 1.667rem 2.5rem;
+        background-color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include atMedium {
+            padding: 1.25rem 1.875rem;
+        }
+    }
+}

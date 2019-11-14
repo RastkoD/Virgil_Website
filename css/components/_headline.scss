@@ -1,0 +1,15 @@
+.headline {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 1.375rem;
+
+    &__icon {
+        margin-right: 1.25rem;
+        width: 4.167rem;
+        @include atMedium {
+            margin-right: .9375rem;
+            width: 3.125rem;
+        }
+    }
+}

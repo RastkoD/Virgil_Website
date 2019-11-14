@@ -1,0 +1,118 @@
+.reasons {
+    position: relative;
+    padding: 4.167rem 0 5.833rem 0;
+    @include atMedium {
+        padding: 3.125rem 0 4.375rem 0;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        height: 6.875rem;
+        width: 100%;
+        background-color: $color-secondary;
+        pointer-events: none;
+        @include atMedium {
+            width: 6.875rem;
+            height: 100%;
+        }
+    }
+
+    &__intro {
+        @include atSmall {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        @include atMedium {
+            position: absolute;
+            flex-direction: column;
+            align-items: stretch;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        &-copy {
+            @include atSmall {
+                margin-left: -2.5rem;
+                margin-top: 2.5rem;
+            }
+            @include atMedium {
+                margin-top: 0;
+                margin-bottom: -1rem;
+                margin-left: auto;
+                order: 1;
+            }
+            @include atExtralarge {
+                margin-bottom: -6rem;
+            }
+        }
+    }
+
+    &__bird {
+        width: 90%;
+        @include atSmall {
+            max-width: 26.875rem;
+        }
+        @include atMedium {
+            order: 2;
+        }
+    }
+
+    &__title {
+        margin: 2rem auto 3.333rem auto;
+        position: relative;
+        display: inline-block;
+        @include atMedium {
+            margin: 0;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            width: calc(100% + 5rem);
+            height: calc(100% + 5rem);
+            transform: translate(-50%, -50%);
+            background-color: $color-white;
+            display: none;
+            @include atMedium {
+                display: block;
+            }
+        }
+    }
+
+    &__items {
+        margin-bottom: -2.5rem;
+        @include atMedium {
+            margin-bottom: -1.875rem;
+        }
+    }
+
+    &__item {
+        margin-bottom: 2.5rem;
+        @include atMedium {
+            margin-bottom: 1.875rem;
+        }
+
+        &-icon {
+            height: 3.5rem;
+        }
+
+        &-title {
+            margin: 10px 0 2.083rem 0;
+            @include atMedium {
+                margin-bottom: 1.5625rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.faq {
+    padding-top: 5rem;
+    @include atMedium {
+        margin-bottom: -7rem;
+    }
+    
+    &__intro {
+        padding-bottom: 5.625rem;
+        margin-bottom: 7.5rem;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 6.5625rem;
+            height: 1px;
+            background-color: $color-primary;
+        }
+    }
+}

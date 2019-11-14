@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Green Tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 30 0 30 29.994 0 29.994"></polygon>
+        <polygon id="path-3" points="0 0 30 0 30 29.994 0 29.994"></polygon>
+    </defs>
+    <g id="About-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-926.000000, -3840.000000)">
+            <g id="Our-Comparisn" transform="translate(-155.000000, 201.000000)">
+                <g id="Green-Tick" transform="translate(1081.000000, 3639.000000)">
+                    <g id="Fill-1-Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <path d="M14.9996,0 C6.7285,0 0,6.7289 0,15 C0,23.2711 6.7285,30 14.9996,30 C23.2711,30 30,23.2711 30,15 C30,6.7289 23.2711,0 14.9996,0 Z M14.9996,28.0328 C7.8137,28.0328 1.9672,22.1863 1.9672,15 C1.9672,7.8137 7.8133,1.9672 14.9996,1.9672 C22.1859,1.9672 28.0324,7.8137 28.0324,15 C28.0324,22.1863 22.1859,28.0328 14.9996,28.0328 Z" id="Fill-1" fill="#B5C451" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                    </g>
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <path d="M20.2201435,10.0956323 L12.3746202,17.8202736 L9.20326304,14.6983771 C8.8134618,14.3149566 8.18184787,14.3149566 7.79235093,14.6983771 C7.40254969,15.0822971 7.40254969,15.7042195 7.79235093,16.0877399 L11.669367,19.9047672 C11.8639126,20.0963277 12.1194185,20.1923077 12.3746202,20.1923077 C12.6298218,20.1923077 12.8857335,20.0963277 13.0802791,19.9043677 C13.0810906,19.9036686 13.0814963,19.9028696 13.0827135,19.9016711 L21.6306499,11.4848952 C22.0205526,11.1013747 22.0205526,10.4790529 21.6306499,10.0956323 C21.241153,9.71171232 20.6092348,9.71171232 20.2201435,10.0956323 Z" id="Fill-4" fill="#B5C451" fill-rule="nonzero" mask="url(#mask-4)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,103 @@
+.accordion {
+    border: 1px solid $color-gray-lgt-4;
+
+    &__item {
+        &-header {
+            padding: 2.1875rem 3.5625rem 2.1875rem 6.0625rem;
+            cursor: pointer;
+            transition: all .25s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p,
+            i,
+            h5 {
+                transition: all .25s;
+            }
+
+            h5 {
+                font-weight: 300;
+                color: $color-gray-lgt-2;
+                @extend .h5--lg;
+
+                span {
+                    font-weight: 400;
+                }
+            }
+
+            i {
+                font-size: 2rem;
+                color: $color-primary;
+                margin-left: 2rem;
+                @include atMedium {
+                    font-size: 1.5rem;
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+
+        &-main {
+            border-top: 1px solid $color-white-4;
+            padding: 1.25rem 6.0625rem 2.9375rem 6.0625rem;
+            display: none;
+        }
+
+        & + & {
+            border-top: 1px solid $color-gray-lgt-4;
+        }
+
+        &.is-open {
+            .accordion__item {
+                &-header {
+                    background-color: $color-white-2;
+
+                    p {
+                        color: $color-primary;
+                    }
+
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+
+    &--alt {
+        .accordion__item {
+            &-header {
+                padding: 2.5rem 6.25rem;
+            }
+
+            &-main {
+                padding: 2.5rem 6.25rem 5rem 6.25rem;
+            }
+
+            &.is-open {
+                .accordion__item {
+                    &-header {
+                        padding: 3.125rem 6.25rem;
+                        background-color: $color-white;
+                        
+                        h5 {
+                            font-size: 2.583rem;
+                            color: $color-primary;
+                            @include atMedium {
+                                font-size: 1.9375rem;
+                            }
+    
+                            span {
+                                font-weight: 300;
+                            }
+                        }
+                    }
+
+                    &-main {
+                        border-top-color: $color-gray-lgt-4;
+                    }
+                }
+            }
+        }
+    }
+}
