@@ -1,5 +1,5 @@
 # Virgil - portfolio/business website for the football player
-#### This is a responsive online website with slick slider and other stuff.
+#### This is a responsive website with slick slider and other stuff.
 
 ### :rocket: [DEMO](https://virgil.netlify.com/)
 
