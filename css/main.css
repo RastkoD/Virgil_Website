@@ -1692,6 +1692,10 @@ ul.list {
         bottom: 0;
         right: 0; } }
 
+.footer a:hover {
+  color: #ffffff;
+}
+
 .home__section-1 {
   padding: 7.5rem 0 11.875rem 0;
   position: relative; }
