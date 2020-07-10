@@ -1,4 +1,4 @@
-# Virgil - portfolio/business website
+# Virgil - portfolio/business/presentation website (unofficial)
 #### This is a responsive website with slick slider and other stuff.
 
 ### :rocket: [DEMO](https://virgil.netlify.com/)
